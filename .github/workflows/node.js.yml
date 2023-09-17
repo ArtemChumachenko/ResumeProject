@@ -30,3 +30,4 @@ jobs:
 
     - name: Npx run
       run: npx cypress run --headless
+       
