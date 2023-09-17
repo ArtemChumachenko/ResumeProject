@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js"
   },
   "author": "",
@@ -15,6 +15,8 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "chai": "^4.3.8",
+    "chai-http": "^4.4.0",
     "cypress": "^13.2.0",
     "cypress-mochawesome-reporter": "^3.6.0",
     "mocha": "^10.2.0"

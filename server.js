@@ -2,7 +2,6 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-// const path = require("path");
 const port = 3000;
 
 app.use(cors());
@@ -59,8 +58,6 @@ const resumeData = {
   skills: ["JavaScript", "HTML", "CSS", "XML", "Cypress", "Mocha", "Chai", "Node.js", "POM", "Cucumber", "BDD", "Postman", "MySQL", "GitHub", "Jenkins", "GitHub Actions", "API Testing"],
 };
 
-// app.use(express.static(path.join(__dirname, 'public')));
-
 app.get("/api/summary", (req, res) => {
   res.json(resumeData.summary);
 });
@@ -81,6 +78,8 @@ app.get("/api/skills", (req, res) => {
   res.json(resumeData.skills);
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+module.exports = server;
