@@ -1,5 +1,3 @@
-// const { spawn } = require('child_process');
-
 describe('Resume Page', () => {
 
   it('loads the page and checks sections', () => {
