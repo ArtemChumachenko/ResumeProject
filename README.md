@@ -56,13 +56,13 @@ docker pull chumachenkoartem/myrepo:v1
 2. Open index.html in a web browser to view the dynamically generated resume.
 
 ## API Endpoints
-*************************************************
-*  Summary:              | /api/summary         *
-*  Personal Information: | /api/personal-info   * 
-*  Work Experience:      | /api/work-experience *
-*  Education:            | /api/education       *
-*  Skills:               | /api/skills          *
-*************************************************
+
+  Summary:               /api/summary         
+  Personal Information:  /api/personal-info    
+  Work Experience:       /api/work-experience 
+  Education:             /api/education       
+  Skills:                /api/skills          
+
 
 Each endpoint returns data related to the respective section of the resume
 
