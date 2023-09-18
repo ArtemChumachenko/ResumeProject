@@ -2,7 +2,7 @@ describe('Resume Page', () => {
 
   it('loads the page and checks sections', () => {
     
-    cy.visit('http://localhost:3000');  
+    cy.visit('/');  
 
     cy.get('#summary').should('exist');
     cy.get('#personal-info').should('exist');
