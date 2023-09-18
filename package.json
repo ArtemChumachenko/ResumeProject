@@ -20,6 +20,7 @@
     "chai-http": "^4.4.0",
     "cypress": "^13.2.0",
     "cypress-mochawesome-reporter": "^3.6.0",
+    "cypress-multi-reporters": "^1.6.3",
     "mocha": "^10.2.0"
   }
 }
