@@ -28,32 +28,31 @@ Before running the project, ensure you have the following installed on your mach
 ## Installation
 
 1. Clone the repository to your local machine:
-
 ```bash
 git clone <https://github.com/ArtemChumachenko/ResumeProject>
-cd <repository_directory>
-
-2.  Install the project dependencies:
-
+```
+2.  Install the project dependencies
+```bash   
 npm install
-## Installation
-
-1. Clone the repository to your local machine:
-
+```
+3. Install the project dependencies:
 ```bash
- git clone <https://github.com/ArtemChumachenko/ResumeProject>
- cd <repository_directory>
-
-2. Install the project dependencies:
-
  npm install
+```
+
+## Pulling the Docker Image
+
+To use the Docker image for this project, you can pull it from Docker Hub using the following command:
+```bash
+docker pull chumachenkoartem/myrepo:v1
+```
 
 ## Usage
 
 1. Start the server: 
-
+```bash
  npm start
-
+```
 2. Open index.html in a web browser to view the dynamically generated resume.
 
 ## API Endpoints
