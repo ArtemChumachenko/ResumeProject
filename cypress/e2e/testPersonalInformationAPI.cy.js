@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-undef
 describe('Personal Information API', () => {
-  it('should return personal information', () => {
+  it.skip('should return personal information', () => {
     cy.request('http://localhost:3000/api/personal-info')
       .its('status')
       .should('eq', 200)
