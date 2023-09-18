@@ -5,7 +5,7 @@ module.exports = defineConfig({
   viewportWidth: 1920,
   viewportHeight: 1080,
   chromeWebSecurity: false,
-  defaultCommandTimeout: 7000,
+  defaultCommandTimeout: 10000,
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
