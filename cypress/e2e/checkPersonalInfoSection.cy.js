@@ -1,11 +1,10 @@
+/* eslint-disable no-undef */
 describe('Personal Information', () => {
-    it('should display personal information', async() => {
+  it('should display personal information', async () => {
+    cy.visit('/')
 
-      cy.visit('/');
-      
-      cy.get('#personal-info').should('be.visible');
-      
-      await cy.contains('Name: Artem Chumachenko').should('be.visible');
-    });
-  });
-  
+    cy.get('#personal-info').should('be.visible')
+
+    await cy.contains('Name: Artem Chumachenko').should('be.visible')
+  })
+})
