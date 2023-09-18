@@ -1,11 +1,10 @@
+/* eslint-disable no-undef */
 describe('Education Section', () => {
-    it('should display education details', async() => {
+  it('should display education details', async () => {
+    cy.visit('/')
 
-      cy.visit('/');
+    cy.get('#education').scrollIntoView()
 
-      cy.get('#education').scrollIntoView();
-
-      await cy.get('#education').should('be.visible');
-    });
-  });
-  
+    await cy.get('#education').should('be.visible')
+  })
+})

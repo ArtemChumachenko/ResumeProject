@@ -1,3 +1,5 @@
+/* eslint-disable eol-last */
+/* eslint-disable no-undef */
 // ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
@@ -16,8 +18,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-import 'cypress-real-events';
-import 'cypress-mochawesome-reporter/register';
+import 'cypress-real-events'
+import 'cypress-mochawesome-reporter/register'
 
 Cypress.on('uncaught:exception', () => false)
 
