@@ -1,14 +1,13 @@
 describe('Skills Section', () => {
-    it('should display skills', () => {
+    it('should display skills', async() => {
       
       cy.visit('/');
       
-      cy.get('#skills').should('be.visible');
-      cy.get('#skills-column1').should('be.visible');
-      cy.get('#skills-column2').should('be.visible');
-      
-      cy.contains('JavaScript');
-      cy.contains('Cypress');
-      cy.contains('Node.js');
+      await cy.get('#skills #skills-column1').should('be.visible');
+    await cy.get('#skills #skills-column2').should('be.visible');
+    
+    cy.contains('JavaScript').should('be.visible');
+    cy.contains('Cypress').should('be.visible');
+    cy.contains('Node.js').should('be.visible');
     });
   });

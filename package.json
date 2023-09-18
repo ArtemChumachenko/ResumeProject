@@ -22,6 +22,7 @@
     "cypress-mochawesome-reporter": "^3.6.0",
     "cypress-multi-reporters": "^1.6.3",
     "cypress-real-events": "^1.10.3",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
