@@ -29,5 +29,5 @@ jobs:
     # - run: npm test
 
     - name: Npx run
-      run: npx cypress run
+      run: npx cypress run --headless
        
