@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "scripts": {
+  "script1": {
     "test": "mocha",
-    "start": "node server.js"
+    "start": "node server.js",
+    "stop": "npm-run-all --parallel stop:*",
+    "stop:server": "pkill -f 'node server.js'"
   },
+  "script2": {
+    "start": "node server.js",
+    "cypress": "cypress open"
+  },  
   "author": "",
   "license": "ISC",
   "dependencies": {
