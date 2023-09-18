@@ -1,5 +1,5 @@
-const { defineConfig } = require("cypress");
-const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
+const { defineConfig } = require('cypress')
+const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib')
 
 module.exports = defineConfig({
   viewportWidth: 1920,
@@ -7,18 +7,18 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   defaultCommandTimeout: 10000,
   e2e: {
-    setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on);
+    setupNodeEvents (on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on)
       on('before:run', async (details) => {
-        console.log('override before:run');
-        await beforeRunHook(details);
-      });
+        console.log('override before:run')
+        await beforeRunHook(details)
+      })
 
       on('after:run', async () => {
-        console.log('override after:run');
-        await afterRunHook();
-      });
-    },
+        console.log('override after:run')
+        await afterRunHook()
+      })
+    }
   },
   video: false,
   reporter: 'cypress-multi-reporters',
@@ -30,7 +30,7 @@ module.exports = defineConfig({
       reportDir: 'cypress/reports/mochawesomeReports'
     },
     mochaJunitReporterReporterOptions: {
-     mochaFile: './cypress/reports/junit/test-results-[hash].xml'
+      mochaFile: './cypress/reports/junit/test-results-[hash].xml'
     }
-  },
-});
+  }
+})
