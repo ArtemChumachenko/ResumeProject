@@ -35,6 +35,10 @@ git clone <https://github.com/ArtemChumachenko/ResumeProject>
 ```bash   
 npm install
 ```
+3. Install the project dependencies:
+```bash
+ npm install
+```
 
 ## Pulling the Docker Image
 
