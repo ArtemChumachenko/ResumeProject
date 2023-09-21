@@ -33,8 +33,6 @@ jobs:
       with:
         start: npm run start
         wait-on: 'http://localhost:3000'
-    # - name: Npx run
-    #   run: npx cypress run --headless
      
 
     - name: Create test summary
@@ -43,11 +41,11 @@ jobs:
       with:
         paths: ./cypress/reports/junit/*.xml
 
-    # - name: Publish test results
-    #   uses: EnricoMi/publish-unit-test-result-action@v1
-      # if: always()
-    #   with:
-    #     files: "./cypress/reports/junit/*.xml"
+    - name: Publish test results
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always()
+      with:
+        files: "./cypress/reports/junit/*.xml"
 
     - name: Mochawesome reports
       uses: actions/upload-artifact@v2
