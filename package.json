@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha",
-    "cypress": "cypress run"
+    "cypress": "cypress run --browser chrome"
   },
   "author": "",
   "license": "ISC",
