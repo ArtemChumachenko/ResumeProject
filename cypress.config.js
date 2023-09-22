@@ -20,17 +20,24 @@ module.exports = defineConfig({
       })
     }
   },
-  video: false,
-  reporter: 'cypress-multi-reporters',
-  reporterOptions: {
-    reporterEnabled: 'cypress-mochawesome-reporter, mocha-junit-reporter',
-    cypressMochawesomeReporterReporterOptions: {
-      embeddedScreenshots: true,
-      reportFilename: 'mochawesome',
-      reportDir: 'cypress/reports/mochawesomeReports'
-    },
-    mochaJunitReporterReporterOptions: {
-      mochaFile: './cypress/reports/junit/test-results-[hash].xml'
-    }
+  // video: false,
+  // reporter: 'cypress-multi-reporters',
+  // reporterOptions: {
+  //   reporterEnabled: 'cypress-mochawesome-reporter, mocha-junit-reporter',
+  //   cypressMochawesomeReporterReporterOptions: {
+  //     embeddedScreenshots: true,
+  //     reportFilename: 'mochawesome',
+  //     reportDir: 'cypress/reports/mochawesomeReports'
+  //   },
+  //   mochaJunitReporterReporterOptions: {
+  //     mochaFile: './cypress/reports/junit/test-results-[hash].xml'
+  //   }
+  // }
+  reporterEnabled: 'mochawesome',
+  mochawesomeReporterOptions: {
+    reportDir: 'cypress/result/json',
+    overwrite: false,
+    html: false,
+    json: true
   }
 })

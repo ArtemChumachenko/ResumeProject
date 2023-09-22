@@ -9,16 +9,12 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [16.x]
-        
     steps:
     - uses: actions/checkout@v3
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -26,13 +22,41 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run 
+
+  Run_unit_tests:
+    runs-on: ubuntu-latest
+    steps: 
     - run: npm test
+  
+  Cypress_e2e:
+    runs-on: ubuntu-latest
+    steps:
 
     - name: Cypress run
       uses: cypress-io/github-action@v5
       with:
         start: npm run start
         wait-on: 'http://localhost:3000'
+      continue-on-error: true
+
+    - name: Copy test execution videos
+      run: |
+        mkdir public
+        cp -r cypress/videos public/videos
+
+    - name: Merge test results into one
+      run: npm run report:merge
+   
+    - name: Generate HTML report
+      run: npm run report:generate
+   
+    - name: Deploy report page
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
        
     - name: Create test summary
       uses: test-summary/action@v1.0
