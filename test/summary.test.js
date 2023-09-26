@@ -1,9 +1,12 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const server = require('../server');
-const expect = chai.expect;
+/* eslint-disable eol-last */
+/* eslint-disable n/handle-callback-err */
+/* eslint-disable no-undef */
+const chai = require('chai')
+const chaiHttp = require('chai-http')
+const server = require('../server')
+const expect = chai.expect
 
-chai.use(chaiHttp);
+chai.use(chaiHttp)
 
 describe('Summary:', () => {
   it('should get the summary', (done) => {
@@ -11,9 +14,9 @@ describe('Summary:', () => {
       .request(server)
       .get('/api/summary')
       .end((err, res) => {
-        expect(res).to.have.status(200);
-        expect(res.body).to.have.property('total');
-        done();
-      });
-  });
-});
+        expect(res).to.have.status(200)
+        expect(res.body).to.have.property('total')
+        done()
+      })
+  })
+})

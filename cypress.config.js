@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress')
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib')
 
 module.exports = defineConfig({
+  projectId: '1bmg2i',
   viewportWidth: 1920,
   viewportHeight: 1080,
   chromeWebSecurity: false,
