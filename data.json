@@ -29,13 +29,11 @@
       "description": "Analyzed requirements and created detailed, comprehensive test plans. Designed and executed manual test cases for various functionalities. Conducted regression testing after bug fixes and new releases"
     }
   ],
-  "education": [
-    {
+  "education":{
       "institution": "Kazan State University",
       "degree": "Bachelor of Science in Computer Science",
       "date": "1997 - 2002"
-    }
-  ],
+    },
   "skills": [
     "JavaScript",
     "HTML",

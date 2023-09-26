@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-undef */
 describe('Education API', () => {
   let educationData
@@ -11,6 +12,9 @@ describe('Education API', () => {
   })
 
   it('should return education data', () => {
-    expect(educationData).to.have.length.greaterThan(0)
+    expect(educationData).to.not.be.undefined
+    expect(educationData).to.have.property('institution', 'Kazan State University')
+    expect(educationData).to.have.property('degree', 'Bachelor of Science in Computer Science')
+    expect(educationData).to.have.property('date', '1997 - 2002')
   })
 })
