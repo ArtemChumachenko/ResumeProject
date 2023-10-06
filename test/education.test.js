@@ -14,7 +14,7 @@ describe('Education:', () => {
       .get('/api/education')
       .end((err, res) => {
         expect(res).to.have.status(200)
-        expect(res.body).to.have.property('institution')
+        expect(res.body).to.be.be('array')
         done()
       })
   })
