@@ -38,7 +38,6 @@ function populateWorkExperience () {
   fetch('http://localhost:3000/api/work-experience')
     .then((response) => response.json())
     .then((data) => {
-      console.log('Received data:', data)
       const workExperienceSection = document.getElementById('work-experience')
       workExperienceSection.innerHTML = `
           <h2>Work Experience</h2>
@@ -74,6 +73,7 @@ function populateEducation () {
               )
               .join('')}
           </ul>
+          <br>
         `
     })
     .catch((error) => console.error('Error fetching education:', error))
