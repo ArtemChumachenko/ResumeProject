@@ -9,13 +9,11 @@
     "phone": "704-750-18-53",
     "address": "219 Murray Glen dr., Cary, NC"
   },
-  "education": [
-    {
+  "education": {
       "institution": "Kazan State University",
       "degree": "Bachelor of Science in Computer Science",
       "date": "1997 - 2002"
-    }
-  ],
+    },
   "workExperience": [
     {
       "company": "AAN Consulting Corporation, NY",

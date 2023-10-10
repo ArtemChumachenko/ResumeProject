@@ -48,6 +48,19 @@ app.post('/api/personal-info', (req, res) => {
   res.json({ message: 'New data added successfully', personalInfo: newPersonalInfo })
 })
 
+app.post('/api/education', (req, res) => {
+  const newEducationData = req.body
+  resumeData.education = newEducationData
+  fs.writeFileSync('./newData.json', JSON.stringify(resumeData, null, 2), (err) => {
+    if (err) {
+      res.status(500).send('Error updating newData.json')
+    } else {
+      res.json({ message: 'New data added successfully', education: newEducationData })
+    }
+  })
+  res.json({ message: 'New data added successfully', education: newEducationData })
+})
+
 const server = app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
 })

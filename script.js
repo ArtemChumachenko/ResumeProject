@@ -64,16 +64,8 @@ function populateEducation () {
       const educationSection = document.getElementById('education')
       educationSection.innerHTML = `
           <h2>Education</h2>
-          <ul>
-            ${data.map((education) =>
-                  `<li>
-                  <strong>${education.institution}</strong> - ${education.degree}
-                  <br>Date: ${education.date}
-                </li>`
-              )
-              .join('')}
-          </ul>
-          <br>
+                <p><strong> ${data.degree}:</strong> ${data.institution}</p>
+                <p>Date: ${data.date}</p>               
         `
     })
     .catch((error) => console.error('Error fetching education:', error))
