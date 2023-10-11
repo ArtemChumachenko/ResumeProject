@@ -70,7 +70,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
   
     - name: Build Docker image
-      run: docker build -t chumachenkoartem/resume:latest .
+      run: docker build -t chumachenkoartem/resume .
       
     - name: Push Docker image
-      run: docker push chumachenkoartem/resume:latest    
+      run: docker push chumachenkoartem/resume    
