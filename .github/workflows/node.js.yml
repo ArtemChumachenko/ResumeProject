@@ -57,7 +57,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
   
     - name: Build Docker image
-      run: docker build -t ***/resume .
+      run: docker build -t artemchumachenko/resume .
       
     - name: Push Docker image
       run: docker push ***/resume    
