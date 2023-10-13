@@ -40,7 +40,7 @@ npm install
 
 To use the Docker image for this project, you can pull it from Docker Hub using the following command:
 ```bash
-docker pull chumachenkoartem/myrepo:v1
+docker pull artemchumachenko/resume:latest
 ```
 
 ## Usage
