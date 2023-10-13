@@ -60,4 +60,4 @@ jobs:
       run: docker build -t artemchumachenko/resume .
       
     - name: Push Docker image
-      run: docker push ***/resume    
+      run: docker push artemchumachenko/resume    
