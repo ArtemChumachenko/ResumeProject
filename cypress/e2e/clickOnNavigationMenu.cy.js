@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Navigation Menu', () => {
   it('should navigate to respective sections when buttons are clicked', () => {
     cy.visit('/')

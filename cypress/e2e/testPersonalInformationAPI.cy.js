@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-undef */
-// eslint-disable-next-line no-undef
 describe('Personal Information API', () => {
   let personalInfoData
   let newPersonalInfo

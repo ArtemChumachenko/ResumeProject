@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Personal Information', () => {
   it('should display personal information', async () => {
     cy.visit('/')

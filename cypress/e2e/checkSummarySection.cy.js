@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Summary Section', () => {
   it('should display the summary', async () => {
     cy.visit('/')

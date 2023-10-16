@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Zooming Effect', () => {
   it('should zoom the section when a navigation link is clicked', () => {
     cy.visit('/')
