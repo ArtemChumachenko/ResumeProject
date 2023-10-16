@@ -42,7 +42,7 @@ jobs:
       if: always()
       with:
         paths: ./cypress/reports/junit/*.xml
-  
+    
     - name: Mochawesome reports
       uses: actions/upload-artifact@v2
       if: always()
