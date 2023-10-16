@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Skills Section', () => {
   it('should display skills', async () => {
     cy.visit('/')

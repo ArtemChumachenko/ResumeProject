@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Work Experience API', () => {
   let workExperienceData
 

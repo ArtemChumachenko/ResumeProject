@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-undef */
 describe('Summary API', () => {
   let summaryData
   let newSummaryData

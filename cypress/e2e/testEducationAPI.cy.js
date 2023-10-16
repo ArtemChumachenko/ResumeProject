@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-expressions */
-
 const { should } = require("chai")
 
-/* eslint-disable no-undef */
 describe('Education API', () => {
   let educationData
   let newEducationData

@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Resume Page', () => {
   it('loads the page and checks sections', () => {
     cy.visit('/')

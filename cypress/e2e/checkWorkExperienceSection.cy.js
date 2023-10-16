@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Work Experience Section', () => {
   it('should display work experience', async () => {
     cy.visit('/')
