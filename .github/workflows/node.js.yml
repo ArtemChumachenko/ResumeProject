@@ -42,6 +42,13 @@ jobs:
       if: always()
       with:
         paths: ./cypress/reports/junit/*.xml
+
+    - name: Lint Code Base
+      uses: super-linter/super-linter/slim@v5
+      env:
+         VALIDATE_ALL_CODEBASE: false
+         DEFAULT_BRANCH: main
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
     - name: Mochawesome reports
       uses: actions/upload-artifact@v2
