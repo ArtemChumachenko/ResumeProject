@@ -21,7 +21,7 @@ module.exports = defineConfig({
       })
     }
   },
-  video: false,
+  video: true,
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
     reporterEnabled: 'cypress-mochawesome-reporter, mocha-junit-reporter',
